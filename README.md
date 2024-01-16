@@ -20,7 +20,7 @@
 
 > > Java Oracle 1.8
 
-```
+```sh
 ❯ java -version
 java version "1.8.0_391"
 Java(TM) SE Runtime Environment (build 1.8.0_391-b13)
@@ -29,7 +29,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.391-b13, mixed mode)
 
 > > Java 11.016.1
 
-```
+```sh
 ❯ java -version
 openjdk version "11.0.16.1" 2022-08-12 LTS
 OpenJDK Runtime Environment Microsoft-40648 (build 11.0.16.1+1-LTS)
@@ -68,7 +68,7 @@ OpenJDK 64-Bit Server VM Microsoft-40648 (build 11.0.16.1+1-LTS, mixed mode)
 
 ![Alt text](image-13.png)
 
-```
+```sh
 ❯ java -version
 openjdk version "21.0.1" 2023-10-17 LTS
 OpenJDK Runtime Environment Temurin-21.0.1+12 (build 21.0.1+12-LTS)
@@ -83,7 +83,7 @@ OpenJDK 64-Bit Server VM Temurin-21.0.1+12 (build 21.0.1+12-LTS, mixed mode, sha
 
 ### WSL Ubuntu
 
-```
+```sh
 ➜  ~ sudo apt update
 [sudo] password for lesp:
 Get:1 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
@@ -103,7 +103,7 @@ Reading state information... Done
 
 > Programas que precisam ser instalado anteriormente ao SDK Manager
 
-```
+```sh
 ➜  ~ curl
 curl: try 'curl --help' or 'curl --manual' for more information
 ➜  ~ curl --version
@@ -113,7 +113,7 @@ Protocols: dict file ftp ftps gopher gophers http https imap imaps ldap ldaps mq
 Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM NTLM_WB PSL SPNEGO SSL TLS-SRP UnixSockets zstd
 ```
 
-```
+```sh
 ➜  ~ sudo apt install unzip
 Reading package lists... Done
 Building dependency tree... Done
@@ -122,7 +122,7 @@ unzip is already the newest version (6.0-26ubuntu3.1).
 0 upgraded, 0 newly installed, 0 to remove and 14 not upgraded.
 ```
 
-```
+```sh
 ➜  ~ sudo apt install zip
 [sudo] password for lesp:
 Reading package lists... Done
@@ -226,11 +226,111 @@ Then issue the following command:
     sdk help
 
 Enjoy!!!
+`````````
+
+```sh
+➜  ~ sdk
+
+NAME
+    sdk - The command line interface (CLI) for SDKMAN!
+
+SYNOPSIS
+    sdk <subcommand> [candidate] [version]
+
+DESCRIPTION
+    SDKMAN! is a tool for managing parallel versions of multiple JVM related
+    Software Development Kits on most Unix based systems. It provides a
+    convenient Command Line Interface (CLI) and API for installing, switching,
+    removing and listing Candidates.
+
+SUBCOMMANDS & QUALIFIERS
+    help         [subcommand]
+    install      <candidate> [version] [path]
+    uninstall    <candidate> <version>
+    list         [candidate]
+    use          <candidate> <version>
+    config       no qualifier
+    default      <candidate> [version]
+    home         <candidate> <version>
+    env          [init|install|clear]
+    current      [candidate]
+    upgrade      [candidate]
+    version      no qualifier
+    offline      [enable|disable]
+    selfupdate   [force]
+    update       no qualifier
+    flush        [tmp|metadata|version]
+
+EXAMPLES
+    sdk install java 17.0.0-tem
+    sdk help install
+```
+
+```sh
+➜  ~ sdk list java
+
+================================================================================
+Available Java Versions for Linux 64bit
+================================================================================
+ Vendor        | Use | Version      | Dist    | Status     | Identifier
+--------------------------------------------------------------------------------
+ Corretto      |     | 21.0.1       | amzn    |            | 21.0.1-amzn
+               |     | 17.0.9       | amzn    |            | 17.0.9-amzn
+               |     | 11.0.21      | amzn    |            | 11.0.21-amzn
+               |     | 8.0.392      | amzn    |            | 8.0.392-amzn
+ Dragonwell    |     | 17.0.9       | albba   |            | 17.0.9-albba
+               |     | 11.0.21      | albba   |            | 11.0.21-albba
+               |     | 11.0.20      | albba   |            | 11.0.20-albba
+               |     | 8.0.392      | albba   |            | 8.0.392-albba
+               |     | 8.0.382      | albba   |            | 8.0.382-albba
+ Gluon         |     | 22.1.0.1.r17 | gln     |            | 22.1.0.1.r17-gln
+               |     | 22.1.0.1.r11 | gln     |            | 22.1.0.1.r11-gln
+ GraalVM CE    |     | 21.0.1       | graalce |            | 21.0.1-graalce
+               |     | 17.0.9       | graalce |            | 17.0.9-graalce
+ GraalVM Oracle|     | 21.0.1       | graal   |            | 21.0.1-graal
+               |     | 17.0.9       | graal   |            | 17.0.9-graal
+ Java.net      |     | 23.ea.5      | open    |            | 23.ea.5-open
+               |     | 23.ea.4      | open    |            | 23.ea.4-open
+               |     | 23.ea.3      | open    |            | 23.ea.3-open
+               |     | 23.ea.2      | open    |            | 23.ea.2-open
+               |     | 23.ea.1      | open    |            | 23.ea.1-open
+               |     | 22.ea.31     | open    |            | 22.ea.31-open
+               |     | 22.ea.30     | open    |            | 22.ea.30-open
+               |     | 22.ea.29     | open    |            | 22.ea.29-open
+               |     | 22.ea.28     | open    |            | 22.ea.28-open
+               |     | 22.ea.27     | open    |            | 22.ea.27-open
+               |     | 22.ea.26     | open    |            | 22.ea.26-open
+               |     | 21.ea.35     | open    |            | 21.ea.35-open
+ JetBrains     |     | 17.0.9       | jbr     |            | 17.0.9-jbr
+               |     | 11.0.14.1    | jbr     |            | 11.0.14.1-jbr
+```
+
+> digitar `q` para sair do modo interativo
+
+> Escolhida a versão para a instalação digitar `sdk install java <identifier>`
+
+```sh
+➜  ~ sdk install java 21.ea.35-open
+
+Downloading: java 21.ea.35-open
+
+In progress...
+
+######################################################################################################################################### 100.0%
+
+Repackaging Java 21.ea.35-open...
+
+Done repackaging...
+
+Installing: java 21.ea.35-open
+Done installing!
+
+
+Setting java 21.ea.35-open as default.
 ```
 
 ### Ubuntu
 
-```
+```sh
 
 ```
-`````````
