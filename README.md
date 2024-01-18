@@ -329,8 +329,156 @@ Done installing!
 Setting java 21.ea.35-open as default.
 ```
 
+```sh
+➜  ~ java -version
+openjdk version "21" 2023-09-19
+OpenJDK Runtime Environment (build 21+35-2513)
+OpenJDK 64-Bit Server VM (build 21+35-2513, mixed mode, sharing)
+```
+
+> Instalação de outra distribuição java
+
+```sh
+➜  ~ sdk install java 17.0.9-jbr
+
+Downloading: java 17.0.9-jbr
+
+In progress...
+
+######################################################################################################################################### 100.0%######################################################################################################################################### 100.0%
+
+Repackaging Java 17.0.9-jbr...
+
+Done repackaging...
+
+Installing: java 17.0.9-jbr
+Done installing!
+
+Do you want java 17.0.9-jbr to be set as default? (Y/n): y
+
+Setting java 17.0.9-jbr as default.
+```
+
+```sh
+➜  ~ java -version
+openjdk version "17.0.9" 2023-10-17
+OpenJDK Runtime Environment JBR-17.0.9+7-1087.3-nomod (build 17.0.9+7-b1087.3)
+OpenJDK 64-Bit Server VM JBR-17.0.9+7-1087.3-nomod (build 17.0.9+7-b1087.3, mixed mode)
+```
+
+> modificar a versão do Java
+
+```sh
+skd use java <identifier>
+```
+
+![Alt text](image-15.png)
+
+```sh
+➜  ~ java -version
+openjdk version "17.0.9" 2023-10-17
+OpenJDK Runtime Environment JBR-17.0.9+7-1087.3-nomod (build 17.0.9+7-b1087.3)
+OpenJDK 64-Bit Server VM JBR-17.0.9+7-1087.3-nomod (build 17.0.9+7-b1087.3, mixed mode)
+```
+
+```sh
+➜  ~ sdk use java
+```
+
+```sh
+➜  ~ sdk use java 21.ea.35-open
+
+Using java version 21.ea.35-open in this shell
+```
+
 ### Ubuntu
 
 ```sh
 
 ```
+
+### IDE
+
+> **Intelij**
+
+https://www.jetbrains.com/community/education/#students
+
+https://www.jetbrains.com/academy/
+
+https://www.jetbrains.com/idea/
+
+![Alt text](jetbrains.png)
+
+![Alt text](jetbrains-2.png)
+
+![Alt text](jetbrains-3.png)
+
+![Alt text](jetbrains-4.png)
+
+![Alt text](image-16.png)
+
+![Alt text](image-17.png)
+
+![Alt text](image-18.png)
+
+![Alt text](image-19.png)
+
+![Alt text](image-20.png)
+
+![Alt text](image-21.png)
+
+![Alt text](image-22.png)
+
+![Alt text](image-23.png)
+
+![Alt text](image-24.png)
+
+![Alt text](image-25.png)
+
+![Alt text](image-26.png)
+
+![Alt text](image-27.png)
+
+![Alt text](image-28.png)
+
+![Alt text](image-29.png)
+
+![Alt text](image-30.png)
+
+![Alt text](image-31.png)
+
+![Alt text](jetbrains-5.png)
+
+![Alt text](jetbrains-6.png)
+
+![Alt text](image-32.png)
+
+![Alt text](image-33.png)
+
+![Alt text](image-34.png)
+
+![Alt text](image-35.png)
+
+![Alt text](image-36.png)
+
+![Alt text](image-37.png)
+
+![Alt text](image-38.png)
+
+![Alt text](image-39.png)
+
+> **Eclipse**
+
+https://spring.io/tools/
+
+> **VSCode**
+
+https://code.visualstudio.com/download
+
+> > Tutorial:
+
+https://code.visualstudio.com/docs/languages/java
+
+>> Extensões para utilizar o Java com o Spring
+
+![Alt text](image-40.png)
